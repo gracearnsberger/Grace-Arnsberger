@@ -1,0 +1,22 @@
+{% extends 'BeachApp/BeachApp_base.html' %}
+{% load staticfiles %}
+
+<!--header-->
+{% block header %}
+Save Cities to Your Tropical City Wish List! &#127965
+{% endblock %}
+
+
+
+<!--model form-->
+{% block content %}
+    <div class="form">
+                <form method="POST" action="save_tropical_cities">
+                    <div>
+                        {% csrf_token %}
+                        {{ form.as_ul }}
+                        <input type= "submit" value="Save">
+                    </div>
+                </form>
+    </div>
+{% endblock %}

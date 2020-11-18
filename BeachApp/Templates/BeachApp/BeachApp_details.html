@@ -1,0 +1,22 @@
+{% extends 'BeachApp/BeachApp_base.html' %}
+{% load staticfiles %}
+
+
+<!--header-->
+{% block header %}
+Saved Tropical Cities Details!
+{% endblock %}
+
+{% block content %}
+<!--display database on cards on index page-->
+<div class="card-container text-center">
+    <div class="card text-white bg-info mb-3 col-md-6" style="max-width: 18rem;">
+      <div class="card-body">
+        <h7 class="card-subtitle">Why?: {{save_cities.why_here}}</h7>
+        <h6 class="card-subtitle-two mb-3 text-white">Date: {{save_cities.date_saved}}</h6>
+        <h5 class="card-subtitle-three mb-3 text-white">Rating: {{save_cities.rate_city}}</h5>
+      </div>
+        <a class="btn btn-danger btn-lg btn-block" href="javascript:history.back(-1)" role="button">Back</a>
+    </div>
+</div>
+{% endblock %}

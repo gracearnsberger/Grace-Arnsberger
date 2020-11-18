@@ -1,0 +1,226 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.footer {
+	background-color:white;
+	position: fixed;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+    left: 0;
+    right: 0;
+}
+
+.Navbar {
+	overflow: hidden;
+	background-color: #B0E0E6;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+    position: fixed;
+    text-align: center;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+	-webkit-animation: moveNav 2s;
+    animation: moveNav 2s;
+    opacity: .75;
+}
+
+.Navbar a {
+	float: left;
+	display: block;
+	color: black;
+	padding: .75vw 1vw;
+	text-decoration: none;
+	text-align: center;
+    font-family: Comic Sans MS;
+    font-weight: bold;
+	font-size: 1vw;
+	text-align: center;
+    position: relative;
+	-webkit-animation: movenavText 3s;
+    animation: movenavText 3s;
+	letter-spacing: .2vw;
+}
+
+.header {
+  font-family: Comic Sans Ms;
+  margin: 0px auto;
+  margin-top: -50px;
+  top: 250px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px black;
+  font-size: 55px;
+  padding: 0px 15px;
+}
+
+.header-main {
+  font-family: Comic Sans Ms;
+  margin: 0px auto;
+  margin-top: -216px;
+  top: 250px;
+  color: #fff;
+  text-shadow: 2px 2px black;
+  font-size: 55px;
+  padding: 0px 15px;
+}
+
+h2 {
+  font-family: Comic Sans Ms;
+  margin: 0px auto;
+  position: absolute;
+  top: 150px;
+  right: 300px;
+  color: #fff;
+  text-shadow: 2px 2px black;
+  font-size: 55px;
+  padding: 0px 15px;
+}
+
+@keyframes moveNav {
+  from {left: -100vw;}
+  to {left: 0vw;}
+}
+@keyframes moveNavText {
+  from {top: -100vw;}
+  to {top: 0vw;}
+}
+
+form {
+    width: 50%;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    padding: 12px 15px;
+    margin: 65px 0;
+    position: fixed;
+    left: 400px;
+    top: 275px;
+    font-family: "Comic Sans MS";
+    text-align: justify;
+    border-color: lightblue;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: .75;
+    padding: 20px;
+    border: 1px solid #270644;
+}
+
+.card-container {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+    margin-top: 350px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 1px 20px;
+}
+
+.cards-container {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 125px;
+    margin-top: 265px;
+    text-align: center;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(5, 300px);
+    grid-template-columns: repeat(5, 300px);
+    padding: 15px 10px;
+}
+
+.card-body {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 8px 0;
+    text-align: center;
+    display: contents;
+}
+
+input[type=text] {
+    width: 50%;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border-color: lightblue;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+input[type=text]:hover {
+    background-color: #F0FFFF;
+}
+
+input[type=submit]  {
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border-color: lightblue;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type=submit]:hover {
+    background-color: #F0FFFF;
+}
+
+.Navbar a:hover {
+  background-color: #F0FFFF;
+  color: rgb(109, 190, 243);
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  text-decoration-color: lightblue;
+}
+
+.Navbar a.active {
+  background-color: #F0FFFF;
+}
+
+.Navbar a.active:hover {
+  color: rgb(109, 190, 243);
+  font-weight: bold;
+}
+
+p {
+  font-family: Comic Sans Ms;
+  font-weight: bold;
+  font-size: 25px;
+  top: 400px;
+  color: #88D8AB;
+  margin: 2px;
+  text-shadow: 2px 2px black;
+  text-align: center;
+}
+
+p:hover {
+  transition: transform 1s;
+  transform: scale(1.15);
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -50;
+}

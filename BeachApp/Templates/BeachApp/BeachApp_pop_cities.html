@@ -1,0 +1,105 @@
+{% extends 'BeachApp/BeachApp_base.html' %}
+{% load staticfiles %}
+
+<!--bootstrap-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<!--header-->
+{% block header %}
+&#127796 Popular Cities &#127796
+{% endblock %}
+
+{% block content %}
+<div class ="cards-container col-md-6">
+  <!-- city 1 -->
+  <div class="card mb-3" style="width: 18rem;">
+    <img class="card-img-top" src="../../static/BeachApp/imgs/borabora.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">Bora Bora, Tahiti</p>
+      <a href="save_tropical_cities" class="btn btn-primary">Save This City</a>
+    </div>
+  </div>
+
+   <!-- city 2 -->
+  <div class="card mb-3" style="width: 18rem;">
+    <img class="card-img-top" src="../../static/BeachApp/imgs/kauai.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">Kauai, Hawaii</p>
+      <a href="save_tropical_cities" class="btn btn-primary">Save This City</a>
+    </div>
+  </div>
+
+   <!-- city 3 -->
+  <div class="card mb-3" style="width: 18rem;">
+    <img class="card-img-top" src="../../static/BeachApp/imgs/miami.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">Miami, Florida</p>
+      <a href="save_tropical_cities" class="btn btn-primary">Save This City</a>
+    </div>
+  </div>
+
+   <!-- city 4 -->
+  <div class="card mb-3" style="width: 18rem;">
+    <img class="card-img-top" src="../../static/BeachApp/imgs/barcelona.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">Barcelona, Spain</p>
+      <a href="save_tropical_cities" class="btn btn-primary">Save This City</a>
+    </div>
+  </div>
+
+   <!-- city 5 -->
+  <div class="card mb-3" style="width: 18rem;">
+    <img class="card-img-top" src="../../static/BeachApp/imgs/dubai.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">Dubai, UAE</p>
+      <a href="save_tropical_cities" class="btn btn-primary">Save This City</a>
+    </div>
+  </div>
+
+   <!-- city 6 -->
+  <div class="card mb-3" style="width: 18rem;">
+    <img class="card-img-top" src="../../static/BeachApp/imgs/valparaiso.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">Valparaiso, Chile</p>
+      <a href="save_tropical_cities" class="btn btn-primary">Save This City</a>
+    </div>
+  </div>
+
+   <!-- city 7 -->
+  <div class="card mb-3" style="width: 18rem;">
+    <img class="card-img-top" src="../../static/BeachApp/imgs/sydney.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">Sydney, Australia</p>
+      <a href="save_tropical_cities" class="btn btn-primary">Save This City</a>
+    </div>
+  </div>
+
+   <!-- city 8 -->
+  <div class="card mb-3" style="width: 18rem;">
+    <img class="card-img-top" src="../../static/BeachApp/imgs/losangeles.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">LA, California</p>
+      <a href="save_tropical_cities" class="btn btn-primary">Save This City</a>
+    </div>
+  </div>
+
+   <!-- city 9 -->
+  <div class="card mb-3" style="width: 18rem;">
+    <img class="card-img-top" src="../../static/BeachApp/imgs/capetown.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">Cape Town, Africa</p>
+      <a href="save_tropical_cities" class="btn btn-primary">Save This City</a>
+    </div>
+  </div>
+
+   <!-- city 10 -->
+  <div class="card mb-3" style="width: 18rem;">
+    <img class="card-img-top" src="../../static/BeachApp/imgs/singapore.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">Singapore, Asia</p>
+      <a href="save_tropical_cities" class="btn btn-primary">Save This City</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

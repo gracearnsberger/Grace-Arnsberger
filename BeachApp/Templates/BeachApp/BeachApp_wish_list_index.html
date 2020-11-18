@@ -1,0 +1,19 @@
+{% extends 'BeachApp/BeachApp_base.html' %}
+{% load staticfiles %}
+
+{% block header %}
+Your Tropical City Wish List!
+{% endblock %}
+
+{% block content %}
+{% for savecities in mycities %}
+    <div class="card-container">
+        <div class="card text-white bg-primary mb-3" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{savecities.city_name}}</h5>
+            <a href="city-details/{{ savecities.id }}" class="btn btn-primary">Details</a>
+          </div>
+        </div>
+    </div>
+{% endfor %}
+{% endblock %}

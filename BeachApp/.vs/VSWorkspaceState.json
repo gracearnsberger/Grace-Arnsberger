@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\migrations",
+    "\\static",
+    "\\static\\BeachApp",
+    "\\static\\BeachApp\\css",
+    "\\static\\BeachApp\\imgs",
+    "\\__pycache__"
+  ],
+  "SelectedNode": "\\static\\BeachApp\\css\\BeachApp_home.css",
+  "PreviewInSolutionExplorer": false
+}
